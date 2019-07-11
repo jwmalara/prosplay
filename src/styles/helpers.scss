@@ -1,0 +1,34 @@
+.constrict {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tac {
+    text-align: center;
+}
+
+.loading {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+}
+.loading:after {
+  content: " ";
+  display: block;
+  width: 34px;
+  height: 34px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: loading 1s linear infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
